@@ -58,7 +58,12 @@ namespace TeacherInformationForm
             if (tech != null)
             {
                 listViewTeacher.Items.Clear();
-                /*MessageBox.Show("Teacher ID:" + tech.TeacherID + "\nFirst Name : " + tech.FirstName + "\nLast Name: " + tech.LastName, "Message");*/
+
+                // TO show the data in MessageBox
+                MessageBox.Show("Teacher ID:" + tech.TeacherID + "\nFirst Name : " + tech.FirstName + "\nLast Name: " + tech.LastName, "Message");
+
+
+                // TO show the data in the list view
                 ListViewItem litem = new ListViewItem(tech.TeacherID.ToString());
                 litem.SubItems.Add(tech.FirstName);
                 litem.SubItems.Add(tech.LastName);
